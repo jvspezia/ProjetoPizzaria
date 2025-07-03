@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { PizzaInterface } from './pizza-interface/pizza-interface';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class App {
   
    pizzaria:string ='PizzariaBeagle'
 
-listaPizzas:any[] = [
+listaPizzas:PizzaInterface[] = [
   {
     valor:35,
     sabor:'Calabresa',

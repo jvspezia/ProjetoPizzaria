@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { PizzaInterface } from '../../pizza-interface/pizza-interface';
 @Component({
   selector: 'app-pizza',
   standalone: false,
@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './pizza.css'
 })
 export class Pizza {
-pizza:any ={
-  
-}
-  pizzaria:string ='PizzariaBeagle'
 
+  //Criando objeto
+  @Input()
+  pizza!: PizzaInterface 
 }
